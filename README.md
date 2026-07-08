@@ -66,7 +66,7 @@ Several PI/PID gain combinations were tested before arriving at the final config
 
 Iteration 2 illustrates a classic PI tuning trap: increasing Kp significantly (5 vs. 0.0001) without reducing Ki pushed the loop toward the stability boundary, producing sustained oscillation instead of convergence. The final gains (low Kp, moderate Ki) proved most stable for this converter's dynamics.
 
-![Tuning Iteration Comparison](results/tuning_comparison.png)
+![Tuning Iteration Comparison](image/tuning_comparison.png)
 
 ## Simulation Results
 
@@ -78,7 +78,7 @@ Iteration 2 illustrates a classic PI tuning trap: increasing Kp significantly (5
 
 This initial undershoot is characteristic of boost converter dynamics, not a tuning flaw. Boost converters have a **right-half-plane (RHP) zero** in their control-to-output transfer function, which causes the output to momentarily move opposite to its eventual steady-state direction before settling — a well-known limitation that caps how aggressively the loop can be tuned without instability.
 
-![Scope Output](results/scope_final_result.png)
+![Scope Output](image/scope_final_result.png)
 
 *Output voltage response showing convergence to 48 V setpoint with characteristic RHP-zero undershoot.*
 
