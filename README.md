@@ -66,7 +66,7 @@ Several PI/PID gain combinations were tested before arriving at the final config
 
 Iteration 2 illustrates a classic PI tuning trap: increasing Kp significantly (5 vs. 0.0001) without reducing Ki pushed the loop toward the stability boundary, producing sustained oscillation instead of convergence. The final gains (low Kp, moderate Ki) proved most stable for this converter's dynamics.
 
-![Tuning Iteration Comparison](path/to/tuning-comparison.png)
+![Tuning Iteration Comparison](results/tuning_comparison.png)
 
 ## Simulation Results
 
