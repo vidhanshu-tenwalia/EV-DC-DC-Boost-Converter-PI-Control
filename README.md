@@ -78,7 +78,7 @@ Iteration 2 illustrates a classic PI tuning trap: increasing Kp significantly (5
 
 This initial undershoot is characteristic of boost converter dynamics, not a tuning flaw. Boost converters have a **right-half-plane (RHP) zero** in their control-to-output transfer function, which causes the output to momentarily move opposite to its eventual steady-state direction before settling — a well-known limitation that caps how aggressively the loop can be tuned without instability.
 
-![Scope Output](path/to/scope-image.png)
+![Scope Output](results/scope_final_result.png)
 
 *Output voltage response showing convergence to 48 V setpoint with characteristic RHP-zero undershoot.*
 
